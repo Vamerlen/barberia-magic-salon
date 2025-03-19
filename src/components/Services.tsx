@@ -1,6 +1,8 @@
+
 import React, { useState } from "react";
 import { Scissors, TrendingUp, Sparkles, Droplet, Zap, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 interface Service {
   id: number;
@@ -103,11 +105,17 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center space-y-4">
           <a href="#booking" className="btn-primary inline-flex items-center gap-2">
             Book Your Service
             <ArrowRight size={16} />
           </a>
+          <div className="mt-4">
+            <Link to="/shop" className="text-barber-gold hover:underline inline-flex items-center gap-2">
+              Visit our shop for premium products
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
