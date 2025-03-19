@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import { Scissors, TrendingUp, Beard, Sparkles, Droplet, Zap, ArrowRight } from "lucide-react";
+import { Scissors, TrendingUp, Sparkles, Droplet, Zap, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Service {
@@ -36,7 +35,7 @@ const Services = () => {
       name: "Beard Trim & Shape",
       description: "Expert beard trimming and shaping to enhance your facial features.",
       price: "R150",
-      icon: Beard,
+      icon: Scissors,
     },
     {
       id: 4,
