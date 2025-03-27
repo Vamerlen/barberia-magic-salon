@@ -1,9 +1,16 @@
 
 import * as React from "react"
 import { Dot } from "lucide-react"
-import { OTPInput as BaseOTPInput, SlotProps } from "input-otp"
+import { type InputOTPProps } from "input-otp"
 
 import { cn } from "@/lib/utils"
+
+// Define our own SlotProps type since it's not exported from input-otp
+type SlotProps = {
+  char: string | null
+  hasFakeCaret: boolean
+  isActive: boolean
+}
 
 // Create a context to manage the OTP input state
 const OTPInputContext = React.createContext<{
@@ -13,16 +20,15 @@ const OTPInputContext = React.createContext<{
 })
 
 const InputOTP = React.forwardRef<
-  React.ElementRef<typeof BaseOTPInput>,
-  React.ComponentPropsWithoutRef<typeof BaseOTPInput>
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & InputOTPProps
 >(({ className, containerClassName, ...props }, ref) => (
-  <BaseOTPInput
+  <div
     ref={ref}
-    containerClassName={cn(
+    className={cn(
       "flex items-center gap-2 has-[:disabled]:opacity-50",
       containerClassName
     )}
-    className={cn("disabled:cursor-not-allowed", className)}
     {...props}
   />
 ))
