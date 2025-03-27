@@ -1,18 +1,21 @@
 
 import { useTheme } from "next-themes"
-import { Toaster } from "sonner"
+import { Toaster as SonnerToaster } from "sonner"
 
 import { cn } from "@/lib/utils"
 
-interface ToasterProps extends React.ComponentPropsWithoutRef<typeof Toaster> {
+// Define props type for our Toaster component
+interface CustomToasterProps {
   theme?: "light" | "dark" | "system"
+  className?: string
+  [key: string]: any
 }
 
-const Toaster = ({ ...props }: ToasterProps) => {
+const Toaster = ({ ...props }: CustomToasterProps) => {
   const { theme = "system" } = useTheme()
 
   return (
-    <Toaster
+    <SonnerToaster
       theme={theme as "light" | "dark" | "system"}
       className="toaster group"
       toastOptions={{
