@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Menu, X, Scissors } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -45,12 +45,12 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         <div className="flex items-center">
-          <Link to="/" className="flex items-center gap-2">
-            <Scissors className="h-8 w-8 text-barber-gold" />
-            <span className="text-xl font-serif font-bold">
-              <span className="text-barber-black">MAGIC</span>
-              <span className="text-barber-gold">CUTS</span>
-            </span>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/54629c42-bc3e-4bfc-96bb-3f2877455f99.png" 
+              alt="KMD PRO BARBER Logo" 
+              className="h-16 w-auto"
+            />
           </Link>
         </div>
 

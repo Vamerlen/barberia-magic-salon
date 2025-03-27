@@ -1,6 +1,5 @@
 
 import React from "react";
-import { Scissors } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,15 +8,17 @@ const Footer = () => {
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <Scissors className="h-8 w-8 text-barber-gold" />
-              <span className="text-xl font-serif font-bold">
-                <span className="text-white">MAGIC</span>
-                <span className="text-barber-gold">CUTS</span>
-              </span>
+            <div className="mb-6">
+              <Link to="/">
+                <img 
+                  src="/lovable-uploads/54629c42-bc3e-4bfc-96bb-3f2877455f99.png" 
+                  alt="KMD PRO BARBER Logo" 
+                  className="h-20 w-auto bg-white/90 p-2 rounded"
+                />
+              </Link>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Premium barbering services in South Africa, delivering exceptional cuts and styling since 2010.
+              Premium barbering services in South Africa, delivering exceptional cuts and styling since 1992.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -143,15 +144,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Opening Hours</h4>
             <ul className="space-y-3">
               <li className="text-gray-400 flex justify-between">
-                <span>Monday - Friday</span>
-                <span>9:00 - 18:00</span>
+                <span>Tuesday - Friday</span>
+                <span>07:00 - 18:00</span>
               </li>
               <li className="text-gray-400 flex justify-between">
-                <span>Saturday</span>
-                <span>9:00 - 17:00</span>
+                <span>Saturday-Sunday</span>
+                <span>09:00 - 14:00</span>
               </li>
               <li className="text-gray-400 flex justify-between">
-                <span>Sunday</span>
+                <span>Monday</span>
                 <span>Closed</span>
               </li>
             </ul>
@@ -169,7 +170,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} Magic Cuts. All rights reserved.
+              © {new Date().getFullYear()} KMD PRO BARBER. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-gray-500 hover:text-barber-gold text-sm">Privacy Policy</a>
