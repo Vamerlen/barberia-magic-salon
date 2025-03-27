@@ -1,14 +1,22 @@
+
 import * as React from "react"
-import { OTPInput, OTPInputContext } from "input-otp"
 import { Dot } from "lucide-react"
+import { OTPInput as BaseOTPInput, SlotProps } from "input-otp"
 
 import { cn } from "@/lib/utils"
 
+// Create a context to manage the OTP input state
+const OTPInputContext = React.createContext<{
+  slots: SlotProps[]
+}>({
+  slots: []
+})
+
 const InputOTP = React.forwardRef<
-  React.ElementRef<typeof OTPInput>,
-  React.ComponentPropsWithoutRef<typeof OTPInput>
+  React.ElementRef<typeof BaseOTPInput>,
+  React.ComponentPropsWithoutRef<typeof BaseOTPInput>
 >(({ className, containerClassName, ...props }, ref) => (
-  <OTPInput
+  <BaseOTPInput
     ref={ref}
     containerClassName={cn(
       "flex items-center gap-2 has-[:disabled]:opacity-50",
@@ -32,8 +40,9 @@ const InputOTPSlot = React.forwardRef<
   React.ElementRef<"div">,
   React.ComponentPropsWithoutRef<"div"> & { index: number }
 >(({ index, className, ...props }, ref) => {
-  const inputOTPContext = React.useContext(OTPInputContext)
-  const { char, hasFakeCaret, isActive } = inputOTPContext.slots[index]
+  const { slots } = React.useContext(OTPInputContext)
+  const slot = slots[index] || {}
+  const { char, hasFakeCaret, isActive } = slot
 
   return (
     <div
