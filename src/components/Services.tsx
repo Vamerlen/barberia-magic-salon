@@ -112,7 +112,7 @@ const Services = () => {
           </a>
           <div className="mt-4">
             <Link to="/shop" className="text-barber-gold hover:underline inline-flex items-center gap-2">
-              Visit our shop for premium products
+              Shop our exclusive merchandise
               <ArrowRight size={16} />
             </Link>
           </div>
