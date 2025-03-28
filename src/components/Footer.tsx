@@ -1,5 +1,5 @@
-
 import React from "react";
+import { Scissors } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,14 +8,12 @@ const Footer = () => {
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="mb-6">
-              <Link to="/">
-                <img 
-                  src="/lovable-uploads/54629c42-bc3e-4bfc-96bb-3f2877455f99.png" 
-                  alt="KMD PRO BARBER Logo" 
-                  className="h-20 w-auto bg-white/90 p-2 rounded"
-                />
-              </Link>
+            <div className="flex items-center gap-2 mb-6">
+              <Scissors className="h-8 w-8 text-barber-gold" />
+              <span className="text-xl font-serif font-bold">
+                <span className="text-white">KMD PRO</span>
+                <span className="text-barber-gold">BARBER</span>
+              </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Premium barbering services in South Africa, delivering exceptional cuts and styling since 1992.
