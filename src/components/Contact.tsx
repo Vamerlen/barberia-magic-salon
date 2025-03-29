@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -37,28 +36,28 @@ const Contact = () => {
     {
       icon: <MapPin className="h-5 w-5 text-barber-gold" />,
       title: "Our Location",
-      details: "123 Mandela Street, Johannesburg, South Africa",
+      details: "599 Franzina St, Eloffsdal, Pretoria, 0084, South Africa",
       link: "https://maps.google.com",
       linkText: "View on Map"
     },
     {
       icon: <Phone className="h-5 w-5 text-barber-gold" />,
       title: "Phone Number",
-      details: "+27 12 345 6789",
-      link: "tel:+27123456789",
+      details: "+27 78 824 6963",
+      link: "tel:+27788246963",
       linkText: "Call Us"
     },
     {
       icon: <Mail className="h-5 w-5 text-barber-gold" />,
       title: "Email Address",
-      details: "info@magiccuts.co.za",
-      link: "mailto:info@magiccuts.co.za",
+      details: "kdmprobarber@outlook.com",
+      link: "mailto:kdmprobarber@outlook.com",
       linkText: "Send Email"
     },
     {
       icon: <Clock className="h-5 w-5 text-barber-gold" />,
       title: "Working Hours",
-      details: "Mon-Fri: 9AM-6PM, Sat: 9AM-5PM",
+      details: "Tuesday-Friday: 7AM-6PM, Sat-Sun: 9AM-2PM",
       link: "#booking",
       linkText: "Book Now"
     }
@@ -173,13 +172,13 @@ const Contact = () => {
       
       <div className="mt-20 w-full h-96 relative">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114614.83576245284!2d28.04005857802582!3d-26.171671425258756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1710242700787!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.3553280869354!2d28.17900867635555!3d-25.73181057831982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955e0d2fd7c3e3%3A0x53b521f756de8169!2s599%20Franzina%20St%2C%20Eloffsdal%2C%20Pretoria%2C%200084%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1718557823762!5m2!1sen!2sus"
           className="w-full h-full"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Magic Cuts location"
+          title="KMD PRO BARBER location"
         ></iframe>
 
         <div className="absolute top-10 left-10 max-w-xs bg-white p-6 rounded-xl shadow-xl md:block hidden">
