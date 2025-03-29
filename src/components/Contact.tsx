@@ -37,7 +37,7 @@ const Contact = () => {
     {
       icon: <MapPin className="h-5 w-5 text-barber-gold" />,
       title: "Our Location",
-      details: "599 Franzina St, Eloffsdal, Pretoria, 0084, South Africa",
+      details: "599 Caterina St, Eloffsdal, Pretoria, 0084, South Africa",
       link: "https://maps.app.goo.gl/tjdKC8eyj3e35cJE7",
       linkText: "View on Map"
     },
