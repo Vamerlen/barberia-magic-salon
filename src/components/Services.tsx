@@ -56,7 +56,7 @@ const Services = () => {
     {
       id: 6,
       name: "Express Service",
-      description: "Quick haircut and style for the man on the go.",
+      description: "Style for the man on the go.",
       price: "R140",
       icon: Zap,
     },
