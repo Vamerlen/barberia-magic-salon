@@ -18,16 +18,16 @@ const Gallery = () => {
     },
     {
       id: 3,
-      url: "barber picture 23.jpeg",
+      url: "../barber picture 23.jpeg",
 
     },
     {
       id: 4,
-      url: "OIP (7).jfif"
+      url: "../OIP (7).jfif"
     },
     {
       id: 5,
-      url: "OIP (6).jfif"
+      url: "../OIP (6).jfif"
     },
   ];
 
