@@ -9,11 +9,11 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "barber picture 22.jpeg"
+      url: "https://images.unsplash.com/photo-1635273051427-7c2a35ce50ce?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       id: 2,
-      url: "barber picture 24.jpeg",
+      url: "https://cdn.pixabay.com/photo/2020/05/27/01/05/haircut-5225272_1280.jpg",
   
     },
     {
