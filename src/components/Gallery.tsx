@@ -9,25 +9,25 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1635273051427-7c2a35ce50ce?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      url: "https://www.menshairstylesnow.com/wp-content/uploads/2018/05/Modern-Crew-Cut.jpg"
     },
     {
       id: 2,
-      url: "https://cdn.pixabay.com/photo/2020/05/27/01/05/haircut-5225272_1280.jpg",
+      url: "https://www.menshairstylesnow.com/wp-content/uploads/2018/05/Short-Crew-Cut.jpg",
   
     },
     {
       id: 3,
-      url: "../barber picture 23.jpeg",
+      url: "https://hairstylecamp.com/wp-content/uploads/buzz-cut-for-black-men-with-round-face-1.jpg.webp",
 
     },
     {
       id: 4,
-      url: "../OIP (7).jfif"
+      url: "https://hairstylecamp.com/wp-content/uploads/buzz-cut-for-black-men-with-square-face-840x960.jpg.webp"
     },
     {
       id: 5,
-      url: "../OIP (6).jfif"
+      url: "https://www.thefashionisto.com/wp-content/uploads/2024/09/Tapered-Buzz-Cut-Black-Men.jpg"
     },
   ];
 
