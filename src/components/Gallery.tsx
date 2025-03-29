@@ -9,33 +9,25 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Classic haircut style",
+      url: "barber picture 22.jpeg"
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Modern fade haircut",
+      url: "barber picture 24.jpeg",
+  
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1593702288056-f773ed11695a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Beard trim and styling",
+      url: "barber picture 23.jpeg",
+
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Classic shave service",
+      url: "OIP (7).jfif"
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1620577438167-dc2cc6e9bc9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Hair styling product application",
-    },
-    {
-      id: 6,
-      url: "https://images.unsplash.com/photo-1630033876705-b33a3b2323fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "Barbershop interior",
+      url: "OIP (6).jfif"
     },
   ];
 
